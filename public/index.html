@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revolt Motors Voice Assistant</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background-animation">
+        <div class="particles">
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+        </div>
+    </div>
+
+    <div class="container">
+        <header>
+            <div class="logo-container">
+                <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjYwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik00MCAxMGgxMjB2NDBINDBWMzBoMjB2MTBoMjBWMzBoNDB2MTBoMjBWMzBoMjB2MjBINzB2LTIwaC0xMHYyMEg0MFYxMHoiIGZpbGw9IiNmY2EzMTEiLz48cGF0aCBkPSJNNjAgMTVoLTEwdjE1aDEwVjMwaDE1VjE1aC01djE1aDVWMjVoMTB2MTVoLTEwVjMwaC01VjE1aC01djE1aDVWMjVoMTB2NWgtMTB2NWgtNVYyNWgtMTB2NWgtNVYyNWgxMHYtNWg1di01aDV2NWg1di01aDV2MTVoLTV2LTVoLTV2NWgtNXYtNWgtNXY1aC01VjI1aDEwdi01aDV2NWg1di01aDV2MTVoLTV2LTVoLTUiIGZpbGw9IiMwZDNiNjYiLz48L3N2Zz4=" alt="Revolt Motors" class="logo">
+                <div class="logo-glow"></div>
+            </div>
+            <h1>Revolt Motors <span class="ai-badge">AI Assistant</span></h1>
+            <p class="subtitle">Experience the future of electric mobility with our intelligent voice assistant</p>
+        </header>
+        
+        <div class="chat-wrapper">
+            <div class="chat-header">
+                <div class="assistant-info">
+                    <div class="avatar">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <div class="assistant-details">
+                        <h3>Rev - AI Assistant</h3>
+                        <p class="status online">Online</p>
+                    </div>
+                </div>
+                <div class="chat-actions">
+                    <button class="action-btn" id="clearChat" title="Clear conversation">
+                        <i class="fas fa-broom"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <div class="chat-container" id="chatContainer">
+                <div class="message ai-message">
+                    <div class="message-avatar">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <div class="message-content">
+                        <p>Hi there! I'm Rev, your Revolt Motors assistant. How can I help you today?</p>
+                        <span class="message-time">Just now</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="suggestions">
+                <p>Try asking:</p>
+                <div class="suggestion-chips">
+                    <button class="suggestion-chip">Tell me about RV400</button>
+                    <button class="suggestion-chip">Battery charging options</button>
+                    <button class="suggestion-chip">Price range</button>
+                    <button class="suggestion-chip">Nearest showroom</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="controls">
+            <div class="pulse-ring"></div>
+            <div class="pulse-ring delay-1"></div>
+            <button class="btn" id="voiceButton">
+                <i class="fas fa-microphone"></i>
+                <div class="btn-wave"></div>
+            </button>
+        </div>
+        
+        <div class="language-selector">
+            <div class="selector-wrapper">
+                <i class="fas fa-globe"></i>
+                <select id="languageSelect">
+                    <option value="en">English</option>
+                    <option value="hi">Hindi</option>
+                    <option value="te">Telugu</option>
+                    <option value="ta">Tamil</option>
+                    <option value="bn">Bengali</option>
+                </select>
+            </div>
+        </div>
+        
+        <div class="status-container">
+            <div class="status-indicator" id="statusIndicator">
+                <div class="indicator-dot"></div>
+                <span id="statusText">Ready to listen</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="notification" id="notification">
+        <div class="notification-content">
+            <i class="fas fa-info-circle"></i>
+            <span id="notification-text"></span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
